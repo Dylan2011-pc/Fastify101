@@ -14,7 +14,7 @@ function Chat() {
 
   return ( 
   <div>
-      <button class="nut-mo-chatbox" onclick="moForm()">Chat</button>
+    <button class="nut-mo-chatbox" onclick="moForm()">Chat</button>
     <div class="Chatbox" id="myForm">
         <form action="" class="form-container">
         <h1>Chatbox</h1>

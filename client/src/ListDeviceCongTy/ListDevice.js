@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import Slibar from '../slibar/slibar.js'
 import { Button ,Modal ,Form } from "react-bootstrap";
 import './listdevice.css'
+import Chat from '../GroupChat/Chat.js';
 function ListDevice() {
   const [id,setid] = useState(false);
     const [show, setShow] = useState(false);
@@ -223,7 +224,7 @@ closeOnClick/>
       </Modal>
 
 
-
+<Chat/>
 </div>
 
     )}
