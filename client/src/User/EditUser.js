@@ -204,7 +204,7 @@ closeOnClick/>
 
 
 </div>
-
+  <Chat/>
 </div>
 
 

@@ -43,25 +43,34 @@ const  senddata =async(event)=>{
 
 return (
 <div class="login-box">
-  <h2>Login</h2>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <h2><i class="glyphicon glyphicon-user"></i>  Login</h2>
   <form>
     <div class="user-box">
-      <input type="search"  name ="email" value={setlogin.email} onChange={Laydata} required />
-      <label >Email</label>
+      <input type="text"  name ="email" value={setlogin.email} onChange={Laydata} required />
+      <label > <i class="glyphicon glyphicon-envelope"></i> Email </label>
     </div>
     <div class="user-box">
       <input type="password"  name="password" value={setlogin.password} onChange={Laydata} required/>
-      <label>Password</label>
+      <label> <i class="fa fa-lock"></i> Password</label>
     </div>
-    
-    <a href="#" type="submit" variant="primary">
+    <div class="checkbox pull-left">
+          <label><input type="checkbox"  /> Remember</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <button  class="btn btn-lg btn-block " type="submit" variant="primary" > Login </button>
       <span></span>
       <span></span>
       <span></span>
-      <span></span>
-      Login
     </a>
-
+     <a href="#">
+      <span></span>
+      <button  class="btn btn-lg btn-block " type="submit" variant="primary" >Sign Up</button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
   </form>
 </div>
 )}

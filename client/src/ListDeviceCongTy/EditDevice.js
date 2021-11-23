@@ -3,9 +3,10 @@ import {Link} from 'react-router-dom'
 import Slibar from '../slibar/slibar.js'
 import { Button ,Form } from "react-bootstrap";
 import './listdevice.css'
+import Chat from '../GroupChat/Chat.js';
 function EditDevice() {
 
-   
+  
 
     const [baseImage , setBaseImage] =useState({
         img:null
@@ -98,6 +99,7 @@ function EditDevice() {
 
       </div>
     </div>
+    <Chat/>
     
   </div>
 

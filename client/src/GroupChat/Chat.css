@@ -1,5 +1,5 @@
 
-
+/* Nút Để Mở Chatbox */
  .nut-mo-chatbox {
    background-color: #555;
    color: white;
@@ -12,7 +12,7 @@
    right: 28px;
    width: 280px;
  }
-
+/* Ẩn chatbox mặc định */
  .Chatbox {
    display: none;
    position: fixed;
@@ -21,13 +21,13 @@
    border: 3px solid #f1f1f1;
    z-index: 9;
  }
-
+/* Thêm style cho form */
  .form-container {
    max-width: 300px;
    padding: 10px;
    background-color: white;
  }
-
+/* thiết lập style textarea */
  .form-container textarea {
    width: 100%;
    padding: 15px;
@@ -37,12 +37,12 @@
    resize: none;
    min-height: 200px;
  }
-
+/*thiết lập style cho textarea khi được focus */
  .form-container textarea:focus {
    background-color: #ddd;
    outline: none;
  }
-
+/* Thiết lập style cho nút trong form*/
  .form-container .btn {
    background-color: #4CAF50;
    color: white;
@@ -52,12 +52,11 @@
    width: 100%;
    margin-bottom:10px;
    opacity: 0.8;
- }
-
+ }/* Thiết lập màu nền cho nút đóng chatbox */
  .form-container .nut-dong-chatbox {
    background-color: red;
  }
-
+/* Thêm hiệu ứng hover cho nút*/
  .form-container .btn:hover, .nut-mo-chatbox:hover {
    opacity: 1;
  }
