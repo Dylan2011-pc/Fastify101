@@ -22,7 +22,9 @@ body {
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
-
+.login-box h2:hover{
+  color:#19bcfc;
+}
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
@@ -35,12 +37,11 @@ body {
 }
 .btn {
   padding: auto;
-  background-color: #027581;
-  border: #19bcfc;
   background: none;
   color: #fff;
-  
- 
+}
+.checkbox label:hover{
+  color: #19bcfc;
 }
 .checkbox label,
 .checkbox a {
@@ -57,6 +58,7 @@ body {
   outline: none;
   background: transparent;
 }
+
 .login-box .user-box label {
   position: absolute;
   top:0;
@@ -67,8 +69,10 @@ body {
   pointer-events: none;
   transition: .5s;
 }
-
-.login-box .user-box input:focus ~ label,
+.login-box .user-box input:hover ~ label{
+  color: #19bcfc;
+}
+.login-box .user-box input:focus ~ label, 
 .login-box .user-box input:valid ~ label {
   top: -30px;
   left: 0;

@@ -97,11 +97,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2196f359;
+    background: #19bcfc;
 }
-
-
-
 .social-icons {
     display: flex;
     align-items: center;
@@ -121,8 +118,6 @@ header {
     background-repeat: no-repeat;
     border-radius: 50%;
 }
-
-
 @media only screen and (max-width: 1200px) {
     .sidebar {
         width: 60px;
