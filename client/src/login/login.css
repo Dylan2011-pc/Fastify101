@@ -7,13 +7,11 @@ body {
   font-family: sans-serif;
   background: linear-gradient(#fff, #fff);
 }
-
-
 .login-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 560px;
+  width: 550px;
   height: auto;
   padding: 40px;
   transform: translate(-50%, -50%);
@@ -36,9 +34,10 @@ body {
   position: relative;
 }
 .btn {
-  padding: auto;
+  
   background: none;
   color: #fff;
+  text-align: left;
 }
 .checkbox label:hover{
   color: #19bcfc;
@@ -93,9 +92,9 @@ body {
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
+  margin-left: 2.5cm;
 }
-
 .login-box a:hover {
   background: #03e9f4;
   color: #fff;
@@ -105,10 +104,10 @@ body {
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
 }
-
 .login-box a span {
   position: absolute;
   display: block;
+  text-align: center;
 }
 
 .login-box a span:nth-child(1) {

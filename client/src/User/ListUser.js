@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { Button ,Modal ,Form} from "react-bootstrap";
 import Slibar from '../slibar/slibar'
 import './listuser.css'
-import Chat from '../GroupChat/Chat';
+import PopChat from '../GroupChat/Chat';
 function ListUser() {
 
 
@@ -238,7 +238,7 @@ closeOnClick/>
           </Button>
         </Modal.Footer>
       </Modal>
-      <Chat/>
+      <PopChat/>
 </div>
     )}
 export default ListUser
