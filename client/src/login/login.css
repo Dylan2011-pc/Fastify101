@@ -93,7 +93,8 @@ body {
   transition: .5s;
   margin-top: 40px;
   letter-spacing: 4px;
-  margin-left: 2.5cm;
+  margin:auto;
+  margin-left: 8.5cm;
 }
 .login-box a:hover {
   background: #03e9f4;
