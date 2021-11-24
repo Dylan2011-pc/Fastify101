@@ -64,10 +64,14 @@
   border-radius: 15px;
 }
 
-#chatCon .chat-box .footer input:foucs {
+#chatCon .chat-box .footer input:focus {
   outline: none;
 }
-
+#chatCon .chat-box .footer label{
+    bottom: auto;
+    color:#19bcfc;
+    
+}
 #chatCon .chat-box .footer button {
   border: none;
   font-size: 22.5px;
