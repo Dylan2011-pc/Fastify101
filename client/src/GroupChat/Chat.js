@@ -1,13 +1,13 @@
 import React  from 'react'
 import './Chat.css'
 import Slibar from '../slibar/slibar'
-import { Container } from 'react-bootstrap'
+
 function Chat(){
 
  
   return (  
     
-<Container>
+<div>
   <Slibar/>
   <div class="container">
     <div class="row">
@@ -63,16 +63,15 @@ function Chat(){
             </div>
         </div>
         <div class="footer-chat">
-          <input type="file"/>
-          <i class="icon fa fa-picture-o clickable" aria-hidden="true" ></i>
-           <i class="icon fa fa-smile-o clickable"  aria-hidden="true"></i>
           <input type="text" class="write-message" placeholder="Type your message here"></input>
-          <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
+          <i class="icon fa fa-smile-o clickable" ><input type="file"></input></i>
+          <i class="icon fa fa-picture-o clickable"></i>
+          <button class="btn btn-lg btn-block">gửi<i class="fa fa-paper-plane clickable" aria-hidden="true"></i></button>
         </div>
       </section>
     </div>
   </div>
-</Container>
+</div>
 
 )}
   
