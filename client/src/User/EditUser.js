@@ -185,10 +185,6 @@ closeOnClick/>
   <option value="Admin">Admin</option>
 </select>
 </Form.Group>
-    
-
-
-
     <Button variant="primary" onClick={SendEditUser}>Edit User</Button>
 
     <Link to="/listuser" > <Button variant="secondary">
@@ -196,9 +192,6 @@ closeOnClick/>
   </Button> </Link>
 
 </Form>
-
-
-
 
         </div>
 

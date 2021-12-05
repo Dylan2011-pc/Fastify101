@@ -1,8 +1,6 @@
 import React  from 'react'
 import './Chat.css'
 import Slibar from '../slibar/slibar'
-import { ToastContainer, toast } from 'react-toastify';
-import { Slide } from 'react-toastify'
 import { Container } from 'react-bootstrap'
 function Chat(){
 
@@ -14,6 +12,7 @@ function Chat(){
   <div class="container">
     <div class="row">
       <section class="discussions">
+        <scrollbars>
         <div class="discussion search">
           <div class="searchbar">
             <i class="fa fa-search" aria-hidden="true"></i>
@@ -41,13 +40,12 @@ function Chat(){
           </div>
           <div class="timer">3 min</div>
         </div>
-
+        </scrollbars>
       </section>
       <section class="chat">
         <div class="header-chat">
           <i class="icon fa fa-user-o" aria-hidden="true"></i>
           <p class="name">Thu</p>
-          <i class="icon clickable fa fa-ellipsis-h right" aria-hidden="true"></i>
         </div>
         <div class="messages-chat">
           <div class="message">
@@ -60,13 +58,15 @@ function Chat(){
             <p class="text"> Chat with me!!</p>
           </div>
           <p class="time"> 14h58</p>
-          
+           <div class="response">
+              <p class="text"> chat with me!!</p>
+            </div>
         </div>
         <div class="footer-chat">
-          <i class="icon fa fa-smile-o clickable"  aria-hidden="true"></i>
-          
+          <input type="file"/>
+          <i class="icon fa fa-picture-o clickable" aria-hidden="true" ></i>
+           <i class="icon fa fa-smile-o clickable"  aria-hidden="true"></i>
           <input type="text" class="write-message" placeholder="Type your message here"></input>
-          <input type="file" class="custom-file-input"></input>
           <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
         </div>
       </section>
