@@ -1,8 +1,17 @@
-import React  from 'react'
+import React, {useState}  from 'react'
 import './Chat.css'
 import Slibar from '../slibar/slibar'
-
+import InputEmoji from 'react-input-emoji'
 function Chat(){
+      
+
+
+      const [ text, setText ] = useState('')
+
+      function handleOnEnter (text) {
+        console.log('enter', text)
+      }
+
 
  
   return (  
@@ -29,7 +38,6 @@ function Chat(){
           </div>
           <div class="timer">12 sec</div>
         </div>
-
         <div class="discussion">
           <div class="photo" >
             <div class="online"></div>
@@ -43,6 +51,7 @@ function Chat(){
         </scrollbars>
       </section>
       <section class="chat">
+        <scrollbars>
         <div class="header-chat">
           <i class="icon fa fa-user-o" aria-hidden="true"></i>
           <p class="name">Thu</p>
@@ -63,11 +72,20 @@ function Chat(){
             </div>
         </div>
         <div class="footer-chat">
-          <input type="text" class="write-message" placeholder="Type your message here"></input>
-          <i class="icon fa fa-smile-o clickable" ><input type="file"></input></i>
-          <i class="icon fa fa-picture-o clickable"></i>
+          <InputEmoji
+          type = "text"
+          class="write-message"
+          value={text}
+          onChange={setText}
+          cleanOnEnter
+          onEnter={handleOnEnter}
+          placeholder="Type a message"
+        />
+          
+          <i class="icon fa fa-picture-o clickable"><input type="file"></input></i>
           <button class="btn btn-lg btn-block">gửi<i class="fa fa-paper-plane clickable" aria-hidden="true"></i></button>
         </div>
+        </scrollbars>
       </section>
     </div>
   </div>
