@@ -9,6 +9,7 @@ import ListDevice from './ListDeviceCongTy/ListDevice'
 import EditDevice  from './ListDeviceCongTy/EditDevice.js';
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-toastify/dist/ReactToastify.css';
+import Chat from './GroupChat/Chat.js';
 function App() {
   return (
     <div className="App">
@@ -21,12 +22,10 @@ function App() {
     <Route path="/editdevice"  exact component={EditDevice} />
    
     <Route path="/listdevicemuon"  exact component={ListDeviceMuon} />
-
+    <Route path="/groupchat" exact component={Chat}/>
     <Route path="/listdevicechopheduyet"  exact component={EditDevice} />
     </Switch>
   </Router> 
-
-  
     </div>
   );
 }

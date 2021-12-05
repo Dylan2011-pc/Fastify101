@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import {Link} from 'react-router-dom'
 import Slibar from '../slibar/slibar.js'
 import './edituser.css'
-import PopChat  from '../GroupChat/Chat.js'
+
 function EditUser() {
   const [editUser , setEditUser] = useState({
     ten:'',
@@ -204,7 +204,7 @@ closeOnClick/>
 
 
 </div>
-  <PopChat/>
+  
 </div>
 
 

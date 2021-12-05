@@ -1,49 +1,63 @@
-import React ,{ useState } from 'react'
+import React  from 'react'
 import './Chat.css'
-
-
-  export const PopChat = ( props ) => {
-  let hide = {
-    display: 'none',
-  }
-  let show = {
-    display: 'block'
-  }
-  let textRef = React.createRef()
-  const {messages} = props
-
-  const [chatopen, setChatopen] = useState(false)
-  const toggle = e => {
-    setChatopen(!chatopen)
-  }
-
-const handleSend = e => {
-  const get = props.getMessage
-  get(textRef.current.value)
-}
+import Slibar from '../slibar/slibar'
+import { ToastContainer, toast } from 'react-toastify';
+import { Slide } from 'react-toastify'
+import { Container } from 'react-bootstrap'
+function Chat(){
 
  
-  return ( 
+  return (  
     
-  <div id='chatCon'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <div class="chat-box" style={chatopen ? show : hide}>
-    <div class="header">Chat box</div>
-    <div class="msg-area"></div>
-      <div class="footer">
-      <input type="text"  ref={textRef} />
-      <label for="myfile"><i class="material-icons">attachment</i></label>
-      <input type="file" id="myfile" name="myfile"/>
-      <button onClick={handleSend}><i class="fa fa-paper-plane"></i></button>
-      </div>
-    </div>
-    <div class="pop">
-      <p><img onClick={toggle} src="https://www.freeiconspng.com/uploads/message-icon-png-4.png"  alt="" /></p>
+<Container>
+  <ToastContainer
+position="top-right"
+autoClose={1000}
+closeOnClick/>
+  <Slibar/>
+  <div class="container">
+    <div class="row">
+      <section class="discussions">
+        <div class="discussion search">
+          <div class="searchbar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search..."></input>
+          </div>
+        </div>
+        <div class="discussion message-active">
+          <div class="photo" >
+            <div class="online"></div>
+          </div>
+          <div class="desc-contact">
+            <p class="name">Thu</p>
+            <p class="message">chat with me</p>
+          </div>
+          <div class="timer"></div>
+        </div>
+
+        <div class="discussion">
+          <div class="photo" >
+            <div class="online"></div>
+          </div>
+          <div class="desc-contact">
+            <p class="name">Cuong</p>
+            <p class="message">Chat with me</p>
+          </div>
+          <div class="timer"></div>
+        </div>
+
+        <div class="footer-chat">
+          <i class="icon fa fa-smile-o clickable" aria-hidden="true"></i>
+          <input type="text" class="write-message" placeholder="Type your message here"></input>
+          <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></i>
+        </div>
+      </section>
     </div>
   </div>
+</Container>
 
-    
-    )}
+)}
+  
      
 
-    export default PopChat
+export default Chat

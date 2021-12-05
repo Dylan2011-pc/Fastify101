@@ -7,7 +7,6 @@ import Slibar from '../slibar/slibar.js'
 import './listdevicemuon.css'
 import { Button ,Modal ,Form } from "react-bootstrap";
 import moment from 'moment';
-import PopChat from '../GroupChat/Chat.js';
 function ListDeviceMuon() {
     
     const token =  Cookies.get('cookielogin')
@@ -152,7 +151,7 @@ closeOnClick/>
         </Modal.Footer>
       </Modal>
 
-        <PopChat/>
+        
         </div>
     )}
 export default ListDeviceMuon

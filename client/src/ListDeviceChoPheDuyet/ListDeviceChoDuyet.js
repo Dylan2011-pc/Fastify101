@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import Slibar from '../slibar/slibar.js'
 import { Button ,Modal ,Form } from "react-bootstrap";
 import './listdevicechoduyet.css'
-import PopChat from '../GroupChat/Chat.js';
+import Chat from '../GroupChat/Chat.js';
 function ListDeviceChoDuyet() {
 
     const [show, setShow] = useState(false);
@@ -147,9 +147,6 @@ function ListDeviceChoDuyet() {
           </Button>
         </Modal.Footer>
       </Modal>
-
-
-  <PopChat/>
 </div>
 
 

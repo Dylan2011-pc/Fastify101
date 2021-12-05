@@ -46,6 +46,12 @@ return(
                         </Link>
                 </li>
 
+                <li> 
+                    <Link to="/groupchat">
+                        <span className="ti-comments"></span>
+                        <span> Trò chuyện </span>
+                    </Link>
+                </li>
 
               
                 <li>
